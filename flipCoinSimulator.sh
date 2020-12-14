@@ -16,7 +16,7 @@ do
 		if [ $HC -eq 21 ]
 		then
 			res=$(( HC-TC ))
-			echo "Head wins with $res difference";
+			echo "Head wins with a difference of: $res";
 			exit
 		fi
 	fi
@@ -26,13 +26,13 @@ do
 		TC=$(( $TC + 1 ))
 		if [ $TC -eq 21 ]
                 then
-                        res=$(( TC-HC ))
-                        echo "Tail wins with $res difference";
+                        res1=$(( TC-HC ))
+                        echo "Tail wins with a difference of: $res1";
 			exit
                 fi
-
+	
 	fi
+
 done
 
-echo "Number of times Head: " $HC
-echo "Number of times Tail: " $TC
+
